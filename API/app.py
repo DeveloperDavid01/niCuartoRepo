@@ -22,7 +22,7 @@ def get_superheroes_marvel():
 
 @app.get("/LOTRWarriors")
 def get_lotr_warriors():
-    rows = ["Frodo", "Sam", "Gandalf", "Aragorn", "Legolas", "Gimli", "Boromir", "Gollum", "El anillo"]
+    rows = ["Frodo", "Sam", "Gandalf", "Aragorn", "Legol@♦as", "Gimli", "Boromir", "Gollum", "El anillo"]
     return rows
 
 @app.get("/starwarsWarriors")
@@ -34,3 +34,10 @@ def get_starwars_warriors():
 def get_warriors_got():
     rows = ["Jon Snow", "Daenerys Targaryen", "Arya Stark", "Tyrion Lannister", "Cersei Lannister", "Jaime Lannister", "Bran Stark", "Sansa Stark"]
     return rows
+
+
+@app.get("/cursoPlatzi")
+def get_cursos():
+    rows = [ "Docker", "Bash", "Linux", "Inglés", "Python", "JavaScript", "Azure", "DevOps" ]
+    return rows
+
